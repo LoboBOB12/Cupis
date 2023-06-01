@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ЦУПИС</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="file_chooser_title" translatable="false">choose file</string>
+    <string name="cannot_open_file_chooser_txt" translatable="false">Open file</string>
+</resources>

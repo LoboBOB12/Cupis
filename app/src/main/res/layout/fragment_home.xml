@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                app:dotsColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="12dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeColor="#292929"
+                app:dotsStrokeWidth="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dots_indicator">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/backimg1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:text="LOREM IPSUM"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/bebas_neue"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur consectetur quod atque accusantium architecto, consequuntur optio at temporibus, enim."
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="220dp"
+                    android:src="@drawable/imgimg1"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas_neue"
+                    android:paddingHorizontal="10dp"
+                    android:text="Статьи"
+                    android:textSize="18dp"
+                    android:textColor="#3BA047" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Англии.”Тоттенхэм” в гостях у “Фулхэма” " />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 09:44 - Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Италии.”Интер против “Эмполи”, “Милан” сыграет с “Лацио” во вторник”" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 17:17 - Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="“Арсенал” обыграл “МЮ”, Хачанов в 1/4 Australian Open,команда Загитовой выиграла КПК,победы “Барсы” и “Реала”,дебют Роналду за “Аль-Наср” и другие новости" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 15:00 - Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Италии.”Интер против “Эмполи”, “Милан” сыграет с “Лацио” во вторник”" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 13:20- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Англии.”Тоттенхэм” в гостях у “Фулхэма” " />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 16:05- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="“Арсенал” обыграл “МЮ”, Хачанов в 1/4 Australian Open,команда Загитовой выиграла КПК,победы “Барсы” и “Реала”,дебют Роналду за “Аль-Наср” и другие новости" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 12:10- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Англии.”Тоттенхэм” в гостях у “Фулхэма” " />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 12:10- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="“Арсенал” обыграл “МЮ”, Хачанов в 1/4 Australian Open,команда Загитовой выиграла КПК,победы “Барсы” и “Реала”,дебют Роналду за “Аль-Наср” и другие новости" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 20:00- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Италии.”Интер против “Эмполи”, “Милан” сыграет с “Лацио” во вторник”" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 20:00- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Чемпионат Англии.”Тоттенхэм” в гостях у “Фулхэма” " />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4F4C4C"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    android:text="Сегодня, 20:00- Футбол" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#333333"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

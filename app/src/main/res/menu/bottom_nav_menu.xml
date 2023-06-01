@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Главная"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/match"
+        android:title="Матчи"
+        android:icon="@drawable/tv"/>
+    <item
+        android:id="@+id/articles"
+        android:title="Статьи"
+        android:icon="@drawable/article"/>
+    <item
+        android:id="@+id/odds"
+        android:title="Коэффиценты"
+        android:icon="@drawable/_x"/>
+</menu>
